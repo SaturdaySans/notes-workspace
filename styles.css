@@ -27,6 +27,8 @@ li {
 .sidebar {
   width: 220px;
   height: 100vh;
+  position: fixed; /* stays in place */
+  overflow-y: auto; /* scroll sidebar independently if needed */
   background: #202020;
   color: #bcbab6;
   padding: 20px;
@@ -56,6 +58,7 @@ li {
 .main {
   flex: 1;
   display: flex;
+  margin-left: 220px;
   justify-content: center;
 }
 
