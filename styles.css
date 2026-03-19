@@ -27,8 +27,8 @@ li {
 .sidebar {
   width: 220px;
   height: 100vh;
-  position: fixed; /* stays in place */
-  overflow-y: auto; /* scroll sidebar independently if needed */
+  position: fixed; 
+  overflow-y: auto; 
   background: #202020;
   color: #bcbab6;
   padding: 20px;
@@ -77,4 +77,14 @@ h1 {
 .content p {
   line-height: 1.6;
   margin: 10px 0;
+}
+
+.sidebar a.item-text {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.sidebar a.item-text:hover {
+  color: #fff;
 }
