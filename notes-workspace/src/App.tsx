@@ -1,13 +1,8 @@
-import './App.css'
-import Sidebar from "./Sidebar.tsx"
+import './App.css';
+import Home from "./Home.tsx";
 
 function App() {
-  return (
-    <div className = "flex">
-      <p>Hello world!</p>
-      <Sidebar />
-    </div>
-  )
+  return <Home />;
 }
 
 export default App
