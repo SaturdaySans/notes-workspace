@@ -1,6 +1,13 @@
+import Sidebar from "../Sidebar.tsx"
+
 
 const Maths = () => {
-  return <div>Math</div>;
+  return (
+    <>
+    <Sidebar/>
+    <div>Math</div>
+    </>
+);
 };
 
 export default Maths;

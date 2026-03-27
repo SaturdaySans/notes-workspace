@@ -39,7 +39,7 @@ export default function Sidebar() {
           </a>
         </li>
         <li>
-          <a href="pages/general_paper.html" className="flex items-center gap-3 p-2 rounded-md hover:bg-[#2a2a2a] transition">
+          <a href="pages/gp.html" className="flex items-center gap-3 p-2 rounded-md hover:bg-[#2a2a2a] transition">
             <FileText size={16} /><span>General Paper</span>
           </a>
         </li>

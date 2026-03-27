@@ -47,10 +47,7 @@ const Home: React.FC = () => {
                 const Icon = page.icon;
                 return (
                   <li key={page.name}>
-                    <Link
-                      to={page.path}
-                      className="flex items-center gap-3 p-2 rounded-md hover:bg-[#2a2a2a] transition"
-                    >
+                    <Link to={page.path} className="flex items-center gap-3 p-2 rounded-md hover:bg-[#2a2a2a] transition">
                       <Icon size={18} className="text-gray-400" />
                       <span>{page.name}</span>
                     </Link>
