@@ -1,12 +1,11 @@
-import Sidebar from "../Sidebar.tsx"
+import Template from "../template.tsx"
 
 
 const Maths = () => {
   return (
-    <>
-    <Sidebar/>
+    <Template>
     <div>Math</div>
-    </>
+    </Template>
 );
 };
 

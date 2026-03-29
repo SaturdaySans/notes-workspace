@@ -1,11 +1,10 @@
-import Sidebar from "../Sidebar.tsx";
+import Template from "../template.tsx";
 
 const Econs = () => {
     return (
-        <>
-            <Sidebar/>
+        <Template>
             <p> Econsmi</p>
-        </>
+        </Template>
     );
 };
 export default Econs;

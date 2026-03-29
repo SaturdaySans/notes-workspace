@@ -1,11 +1,10 @@
-import Sidebar from "../Sidebar.tsx";
+import Template from "../template.tsx";
 
 const GP = () => {
     return (
-        <>
-        <Sidebar />
+        <Template>
         <p>filler </p>
-        </>
+        </Template>
     );
 };
 
