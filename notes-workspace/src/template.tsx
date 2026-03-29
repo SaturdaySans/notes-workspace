@@ -1,28 +1,20 @@
-import Sidebar from "./Sidebar.tsx";
-// import { Link } from "react-router-dom";
-// import { FileText, Search, Inbox, Home as HomeIcon } from "lucide-react";
+import Sidebar from "./Sidebar";
+import type { ReactNode } from "react";
 
-// const Home: React.FC = () => {
-//   const pages = [
-//     { name: "Home", path: "/", icon: HomeIcon },
-//     { name: "Search", path: "/search", icon: Search },
-//     { name: "Inbox", path: "/inbox", icon: Inbox },
-//     { name: "Physics", path: "/physics", icon: FileText },
-//     { name: "Math", path: "/math", icon: FileText },
-//     { name: "Econs", path: "/econs", icon: FileText },
-//     { name: "General Paper", path: "/gp", icon: FileText },
-//   ];
- 
-export default function Template() {
-    return (
-        <>
-
-        <Sidebar />
-        <main className="flex-1 ml-64 flex justify-center p-6">
-            <div className="w-full max-w-5xl">
-            <h1 className="text-4xl font-bold mb-8">Dashboard</h1>
-            </div>
-        </main>
-        </>
-    );
+type TemplateProps = {
+  children: ReactNode;
 };
+
+export default function Template({ children }: TemplateProps) {
+  return (
+    <div className="flex bg-[#191919] text-[#e5e5e5] font-sans min-h-screen">
+      <Sidebar />
+      
+      <main className="flex-1 ml-64 flex justify-center p-6">
+        <div className="w-full max-w-5xl">
+          {children}
+        </div>
+      </main>
+    </div>
+  );
+}
